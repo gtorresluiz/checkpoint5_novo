@@ -1,0 +1,55 @@
+/* Estilos para o componente App */
+
+/* Estilo para o título principal */
+
+//@import './style.scss';
+
+h1 {
+    font-size: 24px;
+    color: #333; /* Cor do texto */
+  }
+  
+  /* Estilo para os campos de entrada de texto */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilo para os botões */
+  button {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para a lista de produtos */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Estilo para a seção "Inserir Produto" */
+  h2:first-child {
+    margin-top: 20px;
+  }
+  
+  /* Estilo para a seção "Excluir Produto" */
+  h2:last-child {
+    margin-top: 20px;
+  }
+  
