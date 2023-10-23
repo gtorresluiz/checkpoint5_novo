@@ -1,6 +1,14 @@
 {
-    "produtos": [
-      { "id": 1, "nome": "Mouse", "preço": 9.99 },
-      { "id": 2, "nome": "Teclado", "preço": 14.99 }
-    ]
-  }
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Mouse",
+      "preço": 9.99
+    },
+    {
+      "id": 2,
+      "nome": "Teclado",
+      "preço": 14.99
+    }
+  ]
+}

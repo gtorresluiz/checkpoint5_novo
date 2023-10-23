@@ -53,7 +53,9 @@ function App() {
 
   return (
     <div>
-      <h1>Gerenciamento de Produtos</h1>
+      <header className="header">
+        <h1 className="header-title">Gerenciamento de Produtos</h1>
+      </header>
       <div>
         <h2>Inserir Produto</h2>
         <input
@@ -68,7 +70,9 @@ function App() {
           value={precoProduto}
           onChange={(e) => setPrecoProduto(e.target.value)}
         />
-        <button onClick={inserirProduto}>Inserir</button>
+        <div className="botao">
+          <button onClick={inserirProduto}>Inserir</button>
+        </div>
       </div>
       <div>
         <h2>Excluir Produto</h2>
@@ -78,9 +82,11 @@ function App() {
           value={produtoId}
           onChange={(e) => setProdutoId(e.target.value)}
         />
-        <button onClick={excluirProduto}>Excluir</button>
+        <div className="botao">
+          <button onClick={excluirProduto}>Excluir</button>
+        </div>
       </div>
-      <div>
+      <div className='lista_produtos'>
         <h2>Lista de Produtos</h2>
         <ul>
           {produtos.map((p) => (
@@ -90,6 +96,9 @@ function App() {
           ))}
         </ul>
       </div>
+      <footer className="footer">
+        <h1 className='footer-h1'>&copy; 2023 CleanWave. Todos os direitos reservados</h1>
+      </footer>
     </div>
   );
 }

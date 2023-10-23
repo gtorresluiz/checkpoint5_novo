@@ -1,55 +1,125 @@
 /* Estilos para o componente App */
 
 /* Estilo para o título principal */
-
-//@import './style.scss';
-
 h1 {
-    font-size: 24px;
-    color: #333; /* Cor do texto */
-  }
-  
-  /* Estilo para os campos de entrada de texto */
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  /* Estilo para os botões */
-  button {
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* Estilo para a lista de produtos */
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    margin: 10px 0;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-    background-color: #f5f5f5;
-  }
-  
-  /* Estilo para a seção "Inserir Produto" */
-  h2:first-child {
-    margin-top: 20px;
-  }
-  
-  /* Estilo para a seção "Excluir Produto" */
-  h2:last-child {
-    margin-top: 20px;
-  }
-  
+  font-size: 24px;
+  color: #333; /* Cor do texto */
+}
+
+/* Estilo para o fundo degradê */
+body {
+  background: linear-gradient(to bottom, #007bff, #00bfff); /* Gradiente de cima para baixo com as cores desejadas */
+  font-family: Arial, sans-serif; /* Defina a fonte padrão para todo o corpo do documento */
+}
+
+/* Adicione margin-bottom ao input de nome para criar um espaço */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px; /* Adicione esta linha */
+}
+
+/* Estilo para o input de preço (não possui margem inferior) */
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilize o placeholder (texto de exemplo no input) */
+input::placeholder {
+  color: #ccc;
+}
+
+
+.botao button {
+  background-color: #767070;
+  font-style: italic;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px auto; /* Centralize horizontalmente */
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  max-width: 150px; /* Defina a largura máxima desejada para os botões */
+  display: flex; /* Centralize verticalmente */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para a lista de produtos */
+/* Estilo para a lista de produtos com rolagem vertical */
+
+ul {
+  list-style: none;
+  padding: 0;
+  overflow-y: scroll; /* Adicione rolagem vertical */
+  max-height: 300px; /* Defina uma altura máxima para a lista (ajuste conforme necessário) */
+}
+
+li {
+  margin: 10px 0;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+
+/* Estilo para a seção "Inserir Produto" */
+h2:first-child {
+  margin-top: 20px;
+}
+
+/* Estilo para a seção "Excluir Produto" */
+h2:last-child {
+  margin-top: 20px;
+}
+
+/* Estilize o cabeçalho */
+.header {
+  background-color: #02214f; 
+  padding: 10px; 
+  text-align: center; 
+}
+
+/* Estilize o título no cabeçalho */
+.header-title {
+  font-size: 32px; 
+  color: #fff;
+}
+
+/* Estilize o rodapé */
+.footer {
+  background-color: #02214f;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px; /* Aumente a altura do rodapé para combinar com o cabeçalho */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-h1 {
+  color: #fff;
+  line-height: 80px; /* Centralize verticalmente o texto no rodapé */
+  font-size: 18px;
+}
+
+// .lista_produtos {
+//   height: 300px; 
+//   overflow-y: scroll; 
+//   border: 1px solid #ccc; 
+// }
