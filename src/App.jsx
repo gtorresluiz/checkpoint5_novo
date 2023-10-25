@@ -97,7 +97,7 @@ function App() {
         </ul>
       </div>
       <footer className="footer">
-        <h1 className='footer-h1'>&copy; 2023 CleanWave. Todos os direitos reservados</h1>
+        <h1 className='footer'>&copy; 2023 CleanWave. Todos os direitos reservados</h1>
       </footer>
     </div>
   );
